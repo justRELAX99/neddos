@@ -1,2 +1,11 @@
 .vscode
 __pycache__
+chrome-win/
+html.html
+html3.html
+phantomjs.exe
+install.txt
+chrome-win
+chromedriver.exe
+debug.log
+ghostdriver.log
