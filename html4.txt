@@ -1,0 +1,406 @@
+<!DOCTYPE html><html lang="ru"><head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="shortcut icon" href="/images/icons/favicons/fav_logo.ico?6">
+
+<link rel="apple-touch-icon" href="/images/icons/pwa/apple/default.png?8">
+
+<meta http-equiv="content-type" content="text/html; charset=windows-1251">
+<meta name="description" content="Р’РљРѕРЅС‚Р°РєС‚Рµ вЂ“ СѓРЅРёРІРµСЂСЃР°Р»СЊРЅРѕРµ СЃСЂРµРґСЃС‚РІРѕ РґР»СЏ РѕР±С‰РµРЅРёСЏ Рё РїРѕРёСЃРєР° РґСЂСѓР·РµР№ Рё РѕРґРЅРѕРєР»Р°СЃСЃРЅРёРєРѕРІ, РєРѕС‚РѕСЂС‹Рј РµР¶РµРґРЅРµРІРЅРѕ РїРѕР»СЊР·СѓСЋС‚СЃСЏ РґРµСЃСЏС‚РєРё РјРёР»Р»РёРѕРЅРѕРІ С‡РµР»РѕРІРµРє. РњС‹ С…РѕС‚РёРј, С‡С‚РѕР±С‹ РґСЂСѓР·СЊСЏ, РѕРґРЅРѕРєСѓСЂСЃРЅРёРєРё, РѕРґРЅРѕРєР»Р°СЃСЃРЅРёРєРё, СЃРѕСЃРµРґРё Рё РєРѕР»Р»РµРіРё РІСЃРµРіРґР° РѕСЃС‚Р°РІР°Р»РёСЃСЊ РІ РєРѕРЅС‚Р°РєС‚Рµ.">
+
+
+<title>Р’С…РѕРґ | Р’РљРѕРЅС‚Р°РєС‚Рµ</title>
+
+<noscript><meta http-equiv="refresh" content="0; URL=/badbrowser.php"></noscript>
+
+<link rel="stylesheet" type="text/css" href="/css/al/common.css?72265352919"><link rel="stylesheet" type="text/css" href="/css/al/base.css?1"><link rel="stylesheet" type="text/css" href="/css/al/fonts_utf.css?1"><link rel="stylesheet" type="text/css" href="/css/al/fonts_cnt.css?6906461068">
+
+<script type="text/javascript" async="" src="https://top-fwz1.mail.ru/js/code.js"></script><script type="text/javascript">
+(function() {
+var alertCont;
+function trackOldBrowserEvent(event) {
+  var xhr = new XMLHttpRequest();
+  xhr.open('GET', '/badbrowser_stat.php?act=track&event=' + event);
+  xhr.send();
+}
+function exposeGlobals() {
+  window.hideOldBrowser = function() {
+    alertCont.remove();
+    var date = new Date();
+    date.setTime(date.getTime() + (7 * 24 * 60 * 60 * 1000));
+    var expiresDate = date.toGMTString();
+    var domain = window.locDomain;
+    document.cookie = 'remixoldbshown=1; expires=' + expiresDate + '; path=/' + (domain ? '; domain=.' + domain : '') + ';secure';
+    trackOldBrowserEvent('hideAlert');
+  }
+}
+function checkOldBrowser() {
+  if(!document.body) {
+    setTimeout(checkOldBrowser, 100);
+    return;
+  }
+  try {
+    if (!('CSS' in window && CSS.supports('display', 'grid'))) {
+      exposeGlobals();
+      var alert = '<div class="OldBrowser__container" style="width:960px;">  РЈСЃС‚Р°РЅРѕРІРёС‚Рµ <a href="/badbrowser.php?source=old_browser_alert" target="_blank">РѕРґРёРЅ РёР· СЌС‚РёС… Р±СЂР°СѓР·РµСЂРѕРІ</a>, С‡С‚РѕР±С‹ СЂР°Р±РѕС‚Р° Р’РљРѕРЅС‚Р°РєС‚Рµ Р±С‹Р»Р° Р±С‹СЃС‚СЂРѕР№ Рё СЃС‚Р°Р±РёР»СЊРЅРѕР№.  <span class="OldBrowser__close" onclick="hideOldBrowser();"></span></div>';
+      alertCont = document.createElement('div');
+      alertCont.className = 'OldBrowser';
+      alertCont.id = 'old_browser_wrap';
+      alertCont.innerHTML = alert;
+      document.body.appendChild(alertCont);
+      trackOldBrowserEvent('showAlert');
+    }
+  } catch(e) {}
+}
+checkOldBrowser();
+})();
+var vk = {
+  ads_rotate_interval: 120000,
+  al: parseInt('3') || 4,
+  id: 0,
+  intnat: '' ? true : false,
+  host: 'vk.com',
+  loginDomain: 'https://login.vk.com/',
+  lang: 0,
+  statsMeta: null,
+  loaderNavSection: '',
+  rtl: parseInt('') || 0,
+  version: 8151288,
+  stDomains: 0,
+  stDomain: '',
+  wsTransport: 'https://stats.vk-portal.net',
+  stExcludedMasks: ["loader_nav","lang"],
+  zero: false,
+  contlen: 7176,
+  loginscheme: 'https',
+  ip_h: 'e9d7291c1045299089',
+  navPrefix: '/',
+  dt: parseInt('0') || 0,
+  fs: parseInt('13') || 13,
+  ts: 1584568096,
+  tz: 10800,
+  pd: 0,
+  css_dir: '',
+  vcost: 7,
+  time: [2020, 3, 19, 0, 48, 16],
+  sampleUser: -1, spentLastSendTS: new Date().getTime(),
+  a11y: 0,
+  statusExportHash: '',
+  audioAdsConfig: {"_":"_"},
+  longViewTestGroup: "every_view",
+  cma: 1,
+  lpConfig: {
+    enabled: 0,
+    key: '',
+    ts: 0,
+    url: '',
+    lpstat: 0
+  },
+
+  pr_tpl: "<div class=\"pr %cls%\" id=\"%id%\"><div class=\"pr_bt\"><\/div><div class=\"pr_bt\"><\/div><div class=\"pr_bt\"><\/div><\/div>",
+  push_hash: '773350a7cb558daad3',
+
+  audioInlinePlayerTpl: "<div class=\"audio_inline_player _audio_inline_player no_select\">\n  <div class=\"audio_inline_player_right\">\n    <div class=\"audio_inline_player_volume\"><\/div>\n  <\/div>\n  <div class=\"audio_inline_player_left\">\n    <div class=\"audio_inline_player_progress\"><\/div>\n  <\/div>\n<\/div>",
+
+  tnsPixelType: 'unauth',
+  tnsPixelSocdem: '13',
+
+  pe: {"search_attempt_stats":1,"search_position_stats":1,"article_poll":1,"vk_apps_svg_qr":1,"upload.send_upload_stat":1,"push_notifier":1,"audio_search_new_catalog":1,"web_stats_transport_enable_xhr_v2":1,"story_reactions_web":1,"notify_new_events_box":1,"web_ajax_json_object":1,"mini_apps_web_add_to_favorites":1,"cookie_secure_default_true":1,"mvk_skeleton_animation":1,"mvk_new_info_snackbar":1,"stickers_bot_link":1,"market_with_products_of_groups":1,"apps_promo_share_story":1,"widgets_xdm_same_origin":1,"stickers_money_transfer_suggestions":1,"web2_story_box_enabled":1,"gifts_stickers_preview_tooltips":1,"performance_box_opening":1,"easy_market_promote_new_payment":1,"navigation_timespent":1,"mvk_mediascope_counter":1,"market_item_recommendations_view_log":1,"market_item_others_view_log":1},
+  countryISO: 'RU',
+};;vk.rv="23573";;if (!window.constants) { window.constants = {Groups: {
+  GROUPS_ADMIN_LEVEL_USER: 0,
+  GROUPS_ADMIN_LEVEL_MODERATOR: 1,
+  GROUPS_ADMIN_LEVEL_EDITOR: 2,
+  GROUPS_ADMIN_LEVEL_ADMINISTRATOR: 3,
+  GROUPS_ADMIN_LEVEL_HOST: 4,
+  GROUPS_ADMIN_LEVEL_EVENT_CREATOR: 5,
+  GROUPS_ADMIN_LEVEL_CREATOR: 6,
+  GROUPS_ADMIN_PSEUDO_LEVEL_ADVERTISER: 100
+}}; };
+
+window.locDomain = vk.host.match(/[a-zA-Z]+\.[a-zA-Z]+\.?$/)[0];
+var _ua = navigator.userAgent.toLowerCase();
+if (/opera/i.test(_ua) || !/msie 6/i.test(_ua) || document.domain != locDomain) document.domain = locDomain;
+var ___htest = (location.toString().match(/#(.*)/) || {})[1] || '', ___to;
+___htest = ___htest.split('#').pop();
+if (vk.al != 1 && ___htest.length && ___htest.substr(0, 1) == vk.navPrefix) {
+  if (vk.al != 3 || vk.navPrefix != '!') {
+    ___to = ___htest.replace(/^(\/|!)/, '');
+    if (___to.match(/^([^\?]*\.php|login|mobile|away)([^a-z0-9\.]|$)/)) ___to = '';
+    location.replace(location.protocol + '//' + location.host + '/' + ___to);
+  }
+}
+
+var StaticFiles = {
+  'cmodules/web/common_web.js' : {v: '142'},
+  'common.css':{v:72265352919},'base.css':{v:1},'fonts_utf.css':{v:1},'fonts_cnt.css':{v:6906461068}
+  ,'cmodules/bundles/audioplayer.a0a7ec3b03bfa722e357.js':{v:'49c2eb27900982546251'},'cmodules/bundles/common.d3f6439ee8f6d4022206.js':{v:'533c5f2e43b3ba55de09'},'cmodules/web/common_web.b2d722bd6e9a4dc31a73.js':{v:'346cda119d0130fa73a1ae37a087b224'},'lang0_0.js': {v: 26409468},'login.css':{v:34695318047},'cmodules/bundles/vendors.70cc452207d7ab2329a5.js':{v:'1d1c845c51f848b67a36'},'cmodules/bundles/454fe4e6032ef0103496e107a1aed550.b8f70d090182967f8813.js':{v:'a42f132796a178c3922c'},'cmodules/web/login.989c59a1125bf94185d2.js':{v:'01842bea29828a0245e5abd65e34a78d'},'cmodules/web/login.js':{v:20},'cmodules/web/jobs_devtools_notification.13b872e82b54ef9fbcf1.js':{v:'f91ef549c0421edead3455cc7597e351'},'cmodules/web/jobs_devtools_notification.js':{v:1},'cmodules/web/page_layout.ce4b224bcb022cc96ef7.js':{v:'06fbc606a69f7adc6e73'},'cmodules/web/page_layout.js':{v:1},'cmodules/bundles/6f8e323c10c73c1d3201e061de48a706.3a587b6a7b84fae81003.js':{v:'99c22e8228dd19ecbae7'},'cmodules/bundles/2bec473be61b318f30429bbed8780799.e3e3716aa396da71137e.js':{v:'c34869d132802b4bd9c4'},'cmodules/web/ui_common.c8f050e3a58fd2607f78.js':{v:'2e1557cb03c8a9a9146aa2f87437a3f5'},'ui_common.js':{v:6},'ui_common.css':{v:20325347912},'cmodules/web/likes.740428a2801c234bd2ff.js':{v:'b74a1f982adcdcef1cd372f0a85b7276'},'cmodules/web/likes.js':{v:1},'cmodules/web/grip.81ed30119f62668cfe6a.js':{v:'df498b5059e13246a2c52a544381c120'},'cmodules/web/grip.js':{v:1}
+}
+var abp;
+</script>
+
+<link type="text/css" rel="stylesheet" href="/css/al/login.css?34695318047"><link type="text/css" rel="stylesheet" href="/css/al/ui_common.css?20325347912"><script type="text/javascript" src="/js/loader_nav8151288_0.js"></script><script type="text/javascript" src="/js/cmodules/bundles/audioplayer.a0a7ec3b03bfa722e357.js?49c2eb27900982546251"></script><script type="text/javascript" src="/js/cmodules/bundles/common.d3f6439ee8f6d4022206.js?533c5f2e43b3ba55de09"></script><script type="text/javascript" src="/js/cmodules/web/common_web.b2d722bd6e9a4dc31a73.js?346cda119d0130fa73a1ae37a087b224"></script><script type="text/javascript" src="/js/lang0_0.js?26409468"></script><script type="text/javascript" src="/js/lib/px.js?ch=1"></script><script type="text/javascript" src="/js/lib/px.js?ch=2"></script><meta name="robots" content="noindex"><meta name="msApplication-ID" content="C6965DD5.VK"><meta name="msApplication-PackageFamilyName" content="C6965DD5.VK_v422avzh127ra"><meta name="google-site-verification" content="CNjLCRpSR2sryzCC4NQKKCL5WnvmBTaag2J_UlTyYeQ"><meta name="yandex-verification" content="798f8402854bea07"><script type="text/javascript" src="/js/cmodules/bundles/vendors.70cc452207d7ab2329a5.js?1d1c845c51f848b67a36"></script><script type="text/javascript" src="/js/cmodules/bundles/454fe4e6032ef0103496e107a1aed550.b8f70d090182967f8813.js?a42f132796a178c3922c"></script><script type="text/javascript" src="/js/cmodules/web/login.989c59a1125bf94185d2.js?01842bea29828a0245e5abd65e34a78d"></script><script type="text/javascript" src="/js/cmodules/web/jobs_devtools_notification.13b872e82b54ef9fbcf1.js?f91ef549c0421edead3455cc7597e351"></script><script type="text/javascript" src="/js/cmodules/web/page_layout.ce4b224bcb022cc96ef7.js?06fbc606a69f7adc6e73"></script><script type="text/javascript" src="/js/cmodules/bundles/6f8e323c10c73c1d3201e061de48a706.3a587b6a7b84fae81003.js?99c22e8228dd19ecbae7"></script><script type="text/javascript" src="/js/cmodules/bundles/2bec473be61b318f30429bbed8780799.e3e3716aa396da71137e.js?c34869d132802b4bd9c4"></script><script type="text/javascript" src="/js/cmodules/web/ui_common.c8f050e3a58fd2607f78.js?2e1557cb03c8a9a9146aa2f87437a3f5"></script><script type="text/javascript" src="/js/cmodules/web/likes.740428a2801c234bd2ff.js?b74a1f982adcdcef1cd372f0a85b7276"></script><script type="text/javascript" src="/js/cmodules/web/grip.81ed30119f62668cfe6a.js?df498b5059e13246a2c52a544381c120"></script>
+
+<script src="/js/cmodules/web/ads_light.892a41b75ccd21cde75f.js?296e5ee8fba041a9252ba0e152df0cec"></script></head>
+
+<body onresize="onBodyResize()" class="login_page no_stl no_sett" data-useragent="chrome">
+  <div id="system_msg" class="fixed"></div>
+  <div id="utils"></div>
+
+  <div id="layer_bg" class="fixed" style="height: 600px;"></div><div id="layer_wrap" class="scroll_fix_wrap fixed layer_wrap" style="width: 800px; height: 600px;"><div id="layer" style="width: 798px;"></div></div>
+  <div id="box_layer_bg" class="fixed" style="height: 600px;"></div><div id="box_layer_wrap" class="scroll_fix_wrap fixed" style="width: 800px; height: 600px;"><div id="box_layer" style="width: 798px;"><div id="box_loader"><div class="pr pr_baw pr_medium" id="box_loader_pr"><div class="pr_bt"></div><div class="pr_bt"></div><div class="pr_bt"></div></div><div class="back"></div></div></div></div>
+
+  <div id="stl_left" style="width: 0px;"><div id="stl_bg"><nobr id="stl_text">РќР°РІРµСЂС…</nobr></div></div><div id="stl_side" style="left: 0px; width: 10px; top: 42px; height: 558px;"></div>
+
+  <script type="text/javascript">window.domStarted && domStarted();</script>
+
+  <div class="scroll_fix_wrap _page_wrap" id="page_wrap"><div><div class="scroll_fix" style="width: 960px;">
+  
+
+  <div id="page_header_cont" class="page_header_cont">
+    <div class="back"></div>
+    <div id="page_header_wrap" class="page_header_wrap" style="width: 960px;">
+      <a class="top_back_link" href="" id="top_back_link" onclick="if (nav.go(this, event, {back: true}) === false) { showBackLink(); return false; }" style="max-width: 925px;"></a>
+      <div id="page_header" class="p_head p_head_l0" style="width: 960px">
+        <div class="content">
+          <div id="top_nav" class="head_nav">
+  <div class="head_nav_item fl_l"><a class="top_home_link fl_l" href="/" aria-label="РќР° РіР»Р°РІРЅСѓСЋ" accesskey="1"><div class="top_home_logo"></div></a></div>
+  <div class="head_nav_item fl_l"><div id="ts_wrap" class="ts_wrap" onmouseover="TopSearch.initFriendsList();">
+  <input name="disable-autofill" style="display: none;">
+  <div class="input_back_wrap no_select"><div class="input_back" style="margin: 7px 0px 7px 8px; padding: 6px 6px 6px 19px;"><div class="input_back_content" style="width: 210px;">РџРѕРёСЃРє</div></div></div><input type="text" onmousedown="event.cancelBubble = true;" ontouchstart="event.cancelBubble = true;" class="text ts_input" id="ts_input" autocomplete="off" name="disable-autofill" aria-label="РџРѕРёСЃРє">
+</div></div>
+  <div class="head_nav_item fl_l head_nav_btns"><div id="top_audio_layer_place" class="top_audio_layer_place"></div></div>
+  <div class="head_nav_item fl_r"><a class="top_nav_link" href="" id="top_switch_lang" style="display: none;" onclick="ajax.post('al_index.php', {act: 'change_lang', lang_id: 3, hash: '5350c34823096693ee' }); return false;">
+  Switch to English
+</a><a class="top_nav_link" href="/join" id="top_reg_link" style="display: none" onclick="return !showBox('join.php', {act: 'box', from: nav.strLoc}, {}, event)">
+  СЂРµРіРёСЃС‚СЂР°С†РёСЏ
+</a></div>
+  <div class="head_nav_item_player"></div>
+</div>
+<div id="ts_cont_wrap" class="ts_cont_wrap" ontouchstart="event.cancelBubble = true;" onmousedown="event.cancelBubble = true;"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="page_layout" style="width: 960px;">
+    <div id="side_bar" class="side_bar fl_l " style="display: none; top: 0px;">
+      <div id="side_bar_inner" class="side_bar_inner">
+        <div id="quick_login" class="quick_login">
+  <div><iframe class="upload_frame" id="quick_login_frame" name="quick_login_frame"></iframe></div><form method="POST" name="login" id="quick_login_form" action="https://login.vk.com/?act=login" target="quick_login_frame">
+    <input type="hidden" name="act" value="login">
+    <input type="hidden" name="role" value="al_frame">
+    <input type="hidden" name="expire" id="quick_expire_input" value="">
+    <input type="hidden" name="recaptcha" id="quick_recaptcha" value="">
+    <input type="hidden" name="captcha_sid" id="quick_captcha_sid" value="">
+    <input type="hidden" name="captcha_key" id="quick_captcha_key" value="">
+    <input type="hidden" name="_origin" value="https://vk.com">
+    <input type="hidden" name="ip_h" value="e9d7291c1045299089">
+    <input type="hidden" name="lg_h" value="4187022c70cd13903a">
+    <input type="hidden" name="ul" id="quick_login_ul" value="">
+    <div class="label">РўРµР»РµС„РѕРЅ РёР»Рё email</div>
+    <div class="labeled"><input type="text" name="email" class="dark" id="quick_email"></div>
+    <div class="label">РџР°СЂРѕР»СЊ</div>
+    <div class="labeled"><input type="password" name="pass" class="dark" id="quick_pass" onkeyup="toggle('quick_expire', !!this.value);toggle('quick_forgot', !this.value)"></div>
+    <input type="submit" class="submit">
+  </form>
+  <button class="quick_login_button flat_button button_wide" id="quick_login_button">Р’РѕР№С‚Рё</button>
+  <button class="quick_reg_button flat_button button_wide" id="quick_reg_button" style="display: none" onclick="top.showBox('join.php', {act: 'box', from: nav.strLoc})">Р РµРіРёСЃС‚СЂР°С†РёСЏ</button>
+  <div class="clear forgot"><div class="checkbox" id="quick_expire" onclick="checkbox(this);ge('quick_expire_input').value=isChecked(this)?1:'';">Р§СѓР¶РѕР№ РєРѕРјРїСЊСЋС‚РµСЂ</div><a id="quick_forgot" class="quick_forgot" href="/restore" target="_top">Р—Р°Р±С‹Р»Рё РїР°СЂРѕР»СЊ?</a></div>
+</div>
+      </div>
+    </div>
+
+    <div id="page_body" class="fl_r " style="width: 960px;">
+      
+      <div id="wrap_between"></div>
+      <div id="wrap3"><div id="wrap2">
+  <div id="wrap1">
+    <div id="content" class="page_block"><h2 class="login_header">Р’С…РѕРґ Р’РљРѕРЅС‚Р°РєС‚Рµ</h2>
+<div id="login_message"><div class="msg info_msg"><div class="msg_text">Р§С‚РѕР±С‹ РїСЂРѕСЃРјР°С‚СЂРёРІР°С‚СЊ СЌС‚Сѓ СЃС‚СЂР°РЅРёС†Сѓ, РЅСѓР¶РЅРѕ Р·Р°Р№С‚Рё РЅР° СЃР°Р№С‚.</div></div></div>
+<div id="login_form_wrap" class="login_form_wrap">
+  <form method="post" name="login" id="login_form" action="https://login.vk.com/?act=login">
+    <input type="hidden" name="act" id="act" value="login">
+    <input type="hidden" name="to" id="to" value="YWxfZmVlZC5waHA-">
+    <input type="hidden" name="expire" id="expire_input" value="">
+    <input type="hidden" name="_origin" value="https://vk.com">
+    <input type="hidden" name="ip_h" value="e9d7291c1045299089">
+    <input type="hidden" name="lg_h" value="2e5db3671f97e00c6c">
+    
+    <input type="text" class="big_text" name="email" id="email" value="" placeholder="РўРµР»РµС„РѕРЅ РёР»Рё email">
+    <input type="password" class="big_text" name="pass" id="pass" value="" placeholder="РџР°СЂРѕР»СЊ">
+    <div class="checkbox" id="expire" onclick="checkbox(this);ge('expire_input').value=isChecked(this)?1:'';">Р§СѓР¶РѕР№ РєРѕРјРїСЊСЋС‚РµСЂ</div>
+    <div class="login_buttons_wrap">
+      <button id="login_button" class="flat_button button_big_text login_button">Р’РѕР№С‚Рё</button><button id="login_reg_button" class="flat_button button_big_text login_reg_button" onclick="nav.go('/join'); return cancelEvent(event);">Р РµРіРёСЃС‚СЂР°С†РёСЏ</button>
+    </div>
+  </form>
+</div>
+<div class="login_fast_restore_wrap _retore_wrap">
+  <a class="login_link login_fast_restore_link" href="/restore">Р—Р°Р±С‹Р»Рё РїР°СЂРѕР»СЊ РёР»Рё РЅРµ РјРѕР¶РµС‚Рµ РІРѕР№С‚Рё?</a>
+</div></div>
+  </div>
+</div></div>
+    </div>
+
+    <div id="footer_wrap" class="footer_wrap fl_r" style="width: 960px;"><div class="footer_nav" id="bottom_nav">
+  <div class="footer_copy"><a href="/about">Р’РљРѕРЅС‚Р°РєС‚Рµ</a> В© 2006вЂ“2020</div>
+  <div class="footer_links">
+    <a class="bnav_a" href="/about">Рћ Р’РљРѕРЅС‚Р°РєС‚Рµ</a>
+    <a class="bnav_a" href="/support?act=home" style="display: none;">РџРѕРјРѕС‰СЊ</a>
+    <a class="bnav_a" href="/terms">РџСЂР°РІРёР»Р°</a>
+    <a class="bnav_a" href="/ads" style="">Р РµРєР»Р°РјР°</a>
+    
+    <a class="bnav_a" href="/dev">Р Р°Р·СЂР°Р±РѕС‚С‡РёРєР°Рј</a>
+    <a class="bnav_a" href="/jobs" style="display: none;">Р’Р°РєР°РЅСЃРёРё</a>
+  </div>
+  <div class="footer_lang"><a class="footer_lang_link" onclick="ajax.post('al_index.php', {act: 'change_lang', lang_id: 0, hash: '5350c34823096693ee'})">Р СѓСЃСЃРєРёР№</a><a class="footer_lang_link" onclick="ajax.post('al_index.php', {act: 'change_lang', lang_id: 1, hash: '5350c34823096693ee'})">РЈРєСЂР°С—РЅСЃСЊРєР°</a><a class="footer_lang_link" onclick="ajax.post('al_index.php', {act: 'change_lang', lang_id: 3, hash: '5350c34823096693ee'})">English</a><a class="footer_lang_link" onclick="if (vk.al) { showBox('lang.php', {act: 'lang_dialog', all: 1}, {params: {dark: true, bodyStyle: 'padding: 0px'}, noreload: true}); } else { changeLang(1); } return false;">РІСЃРµ СЏР·С‹РєРё В»</a></div>
+</div>
+
+<div class="footer_bench clear">
+  
+</div></div>
+
+    <div class="clear"></div>
+  </div>
+</div></div><noscript><div style="position:absolute;left:-10000px;">
+<img src="//top-fwz1.mail.ru/counter?id=2579437;js=na" style="border:0;" height="1" width="1" />
+</div></noscript></div>
+  <div class="progress" id="global_prg"></div>
+
+  <script type="text/javascript">
+    if (parent && parent != window && (browser.msie || browser.opera || browser.mozilla || browser.chrome || browser.safari || browser.iphone)) {
+      document.getElementsByTagName('body')[0].innerHTML = '';
+    } else {
+      window.domReady && domReady();
+      updateMoney(0);
+initPageLayoutUI();
+if (browser.iphone || browser.ipad || browser.ipod) {
+  setStyle(bodyNode, {webkitTextSizeAdjust: 'none'});
+}var qf = ge('quick_login_form'), ql = ge('quick_login'), qe = ge('quick_email'), qp = ge('quick_pass');
+var qlb = ge('quick_login_button'), prgBtn = qlb;
+
+var qinit = function() {
+  setTimeout(function() {
+    ql.insertBefore(ce('div', {innerHTML: '<iframe class="upload_frame" id="quick_login_frame" name="quick_login_frame"></iframe>'}), qf);
+    qf.target = 'quick_login_frame';
+    qe.onclick = loginByCredential;
+    qp.onclick = loginByCredential;
+  }, 1);
+}
+
+if (window.top && window.top != window) {
+  window.onload = qinit;
+} else {
+  setTimeout(qinit, 0);
+}
+
+qf.onsubmit = function() {
+  if (!ge('quick_login_frame')) return false;
+  if (!val('quick_login_ul') && !trim(qe.value)) {
+    notaBene(qe);
+    return false;
+  } else if (!trim(qp.value)) {
+    notaBene(qp);
+    return false;
+  }
+  lockButton(window.__qfBtn = prgBtn);
+  prgBtn = qlb;
+  clearTimeout(__qlTimer);
+  __qlTimer = setTimeout(loginSubmitError, 30000);
+  domFC(domPS(qf)).onload = function() {
+    clearTimeout(__qlTimer);
+    __qlTimer = setTimeout(loginSubmitError, 2500);
+  }
+  return true;
+}
+
+window.loginSubmitError = function() {
+  showFastBox('РџСЂРµРґСѓРїСЂРµР¶РґРµРЅРёe', 'РќРµ СѓРґР°С‘С‚СЃСЏ РїСЂРѕР№С‚Рё Р°РІС‚РѕСЂРёР·Р°С†РёСЋ РїРѕ Р·Р°С‰РёС‰С‘РЅРЅРѕРјСѓ СЃРѕРµРґРёРЅРµРЅРёСЋ. Р§Р°С‰Рµ РІСЃРµРіРѕ СЌС‚Рѕ РїСЂРѕРёСЃС…РѕРґРёС‚, РєРѕРіРґР° РЅР° Р’Р°С€РµРј РєРѕРјРїСЊСЋС‚РµСЂРµ СѓСЃС‚Р°РЅРѕРІР»РµРЅС‹ РЅРµРїСЂР°РІРёР»СЊРЅС‹Рµ С‚РµРєСѓС‰РёРµ РґР°С‚Р° Рё РІСЂРµРјСЏ. РџРѕР¶Р°Р»СѓР№СЃС‚Р°, РїСЂРѕРІРµСЂСЊС‚Рµ РЅР°СЃС‚СЂРѕР№РєРё РґР°С‚С‹ Рё РІСЂРµРјРµРЅРё РІ СЃРёСЃС‚РµРјРµ Рё РїРµСЂРµР·Р°РїСѓСЃС‚РёС‚Рµ Р±СЂР°СѓР·РµСЂ.');
+}
+window.focusLoginInput = function() {
+  scrollToTop(0);
+  notaBene('quick_email');
+}
+window.changeQuickRegButton = function(noShow) {
+  if (noShow) {
+    hide('top_reg_link', 'quick_reg_button');
+  } else {
+    show('top_reg_link', 'quick_reg_button');
+  }
+  toggle('top_switch_lang', noShow && window.langConfig && window.langConfig.id != 3);
+}
+window.submitQuickLoginForm = function(email, pass, opts) {
+  setQuickLoginData(email, pass, opts);
+  if (opts && opts.prg) prgBtn = opts.prg;
+  if (qf.onsubmit()) qf.submit();
+}
+window.setQuickLoginData = function(email, pass, opts) {
+  if (email !== undefined) ge('quick_email').value = email;
+  if (pass !== undefined) ge('quick_pass').value = pass;
+  var params = opts && opts.params || {};
+  each (params, function(i, v) {
+    var el = ge('quick_' + i) || ge('quick_login_' + i);;
+    if (el) {
+      val(el, params[i]);
+    } else {
+      qf.appendChild(ce('input', {type: 'hidden', name: i, id: 'quick_login_' + i, value: v}));
+    }
+  });
+}
+window.loginByCredential = function() {
+  if (!browserFeatures.cmaEnabled || !window.submitQuickLoginForm || window._loginByCredOffered) return false;
+
+  _loginByCredOffered = true;
+  navigator.credentials.get({
+    password: true,
+    mediation: 'required'
+  }).then(function(cred) {
+    if (cred) {
+      submitQuickLoginForm(cred.id, cred.password);
+      return true;
+    } else {
+      return false;
+    }
+  });
+}
+
+if (qlb) {
+  qlb.onclick = function() { if (qf.onsubmit()) qf.submit(); };
+}
+
+if (browser.opera_mobile) show('quick_expire');
+
+if (1) {
+  hide('support_link_td', 'top_support_link');
+}
+var ts_input = ge('ts_input');
+if (ts_input) {
+  placeholderSetup(ts_input, {back: false, reload: true, phColor: '#8fadc8'});
+}
+TopSearch.init();;window.shortCurrency && shortCurrency();
+window.zNav && setTimeout(zNav.pbind({}, {queue:1}), 0);
+window.handlePageParams && handlePageParams({"id":0,"loc":"login?to=YWxfZmVlZC5waHA-&u=2","noleftmenu":1,"wrap_page":1,"width":960,"width_dec":0,"width_dec_footer":0,"top_home_link_class":"top_home_link fl_l","body_class":"login_page","counters":"","pvbig":0,"pvdark":1});addEvent(document, 'click', onDocumentClick);
+addLangKeys({"global_apps":"РџСЂРёР»РѕР¶РµРЅРёСЏ","global_friends":"Р”СЂСѓР·СЊСЏ","global_communities":"РЎРѕРѕР±С‰РµСЃС‚РІР°","head_search_results":"Р РµР·СѓР»СЊС‚Р°С‚С‹ РїРѕРёСЃРєР°","global_chats":"Р”РёР°Р»РѕРіРё","global_show_all_results":"РџРѕРєР°Р·Р°С‚СЊ РІСЃРµ СЂРµР·СѓР»СЊС‚Р°С‚С‹","global_news_search_results":"Р РµР·СѓР»СЊС‚Р°С‚С‹ РїРѕРёСЃРєР° РІ РЅРѕРІРѕСЃС‚СЏС…","global_emoji_cat_recent":"Р§Р°СЃС‚Рѕ РёСЃРїРѕР»СЊР·СѓРµРјС‹Рµ","global_emoji_cat_1":"Р­РјРѕС†РёРё","global_emoji_cat_2":"Р–РёРІРѕС‚РЅС‹Рµ Рё СЂР°СЃС‚РµРЅРёСЏ","global_emoji_cat_3":"Р–РµСЃС‚С‹ Рё Р»СЋРґРё","global_emoji_cat_4":"Р•РґР° Рё РЅР°РїРёС‚РєРё","global_emoji_cat_5":"РЎРїРѕСЂС‚ Рё Р°РєС‚РёРІРЅРѕСЃС‚Рё","global_emoji_cat_6":"РџСѓС‚РµС€РµСЃС‚РІРёСЏ Рё С‚СЂР°РЅСЃРїРѕСЂС‚","global_emoji_cat_7":"РџСЂРµРґРјРµС‚С‹","global_emoji_cat_8":"РЎРёРјРІРѕР»С‹","global_emoji_cat_9":"Р¤Р»Р°РіРё","stories_archive_privacy_info":"Р�СЃС‚РѕСЂРёРё РІ Р°СЂС…РёРІРµ РІРёРґРёС‚Рµ С‚РѕР»СЊРєРѕ Р’С‹","stories_remove_warning":"Р’С‹ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ С…РѕС‚РёС‚Рµ СѓРґР°Р»РёС‚СЊ РёСЃС‚РѕСЂРёСЋ?<br>РћС‚РјРµРЅРёС‚СЊ РґРµР№СЃС‚РІРёРµ Р±СѓРґРµС‚ РЅРµРІРѕР·РјРѕР¶РЅРѕ.","stories_narrative_remove_warning":"Р’С‹ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ С…РѕС‚РёС‚Рµ СѓРґР°Р»РёС‚СЊ СЃСЋР¶РµС‚?<br>РћС‚РјРµРЅРёС‚СЊ РґРµР№СЃС‚РІРёРµ Р±СѓРґРµС‚ РЅРµРІРѕР·РјРѕР¶РЅРѕ.","stories_remove_confirm":"РЈРґР°Р»РёС‚СЊ","stories_answer_placeholder":"Р’Р°С€Рµ СЃРѕРѕР±С‰РµРЅРёРµвЂ¦","stories_answer_sent":"РЎРѕРѕР±С‰РµРЅРёРµ РѕС‚РїСЂР°РІР»РµРЅРѕ","stories_blacklist_title":"РЎРєСЂС‹С‚С‹ РёР· РёСЃС‚РѕСЂРёР№","stories_settings":"РќР°СЃС‚СЂРѕР№РєРё","stories_add_blacklist_title":"РЎРєСЂС‹С‚РёРµ РёР· РёСЃС‚РѕСЂРёР№","stories_add_blacklist_message":"РџРѕР»СЊР·РѕРІР°С‚РµР»СЊ РѕСЃС‚Р°РЅРµС‚СЃСЏ РІ РґСЂСѓР·СЊСЏС…, РЅРѕ РёСЃС‚РѕСЂРёРё РЅРµ Р±СѓРґСѓС‚ РїРѕРєР°Р·С‹РІР°С‚СЊСЃСЏ РІ РЅРѕРІРѕСЃС‚СЏС….","stories_add_blacklist_button":"РЎРєСЂС‹С‚СЊ РёР· РёСЃС‚РѕСЂРёР№","stories_add_blacklist_message_group":"Р’С‹ РѕСЃС‚Р°РЅРµС‚РµСЃСЊ РїРѕРґРїРёСЃС‡РёРєРѕРј СЃРѕРѕР±С‰РµСЃС‚РІР°, РЅРѕ РёСЃС‚РѕСЂРёРё РЅРµ Р±СѓРґСѓС‚ РїРѕРєР°Р·С‹РІР°С‚СЊСЃСЏ РІ РЅРѕРІРѕСЃС‚СЏС….","stories_remove_from_blacklist_button":"Р’РµСЂРЅСѓС‚СЊ РІ РёСЃС‚РѕСЂРёРё","stories_error_cant_load":"РќРµ СѓРґР°Р»РѕСЃСЊ Р·Р°РіСЂСѓР·РёС‚СЊ РёСЃС‚РѕСЂРёСЋ.","stories_try_again":"РџРѕРїСЂРѕР±РѕРІР°С‚СЊ РµС‰С‘ СЂР°Р·","stories_error_expired":"Р�СЃС‚РѕСЂРёСЋ РјРѕР¶РЅРѕ Р±С‹Р»Рѕ РїРѕСЃРјРѕС‚СЂРµС‚СЊ<br>РІ С‚РµС‡РµРЅРёРµ 24 С‡Р°СЃРѕРІ РїРѕСЃР»Рµ РїСѓР±Р»РёРєР°С†РёРё","stories_error_deleted":"Р�СЃС‚РѕСЂРёСЏ СѓРґР°Р»РµРЅР°","stories_error_private":"РђРІС‚РѕСЂ СЃРєСЂС‹Р» РёСЃС‚РѕСЂРёСЋ","stories_error_one_time_seen":"Р�СЃС‚РѕСЂРёСЏ Р±РѕР»СЊС€Рµ РЅРµ РґРѕСЃС‚СѓРїРЅР°","stories_mask_tooltip":"РџРѕРїСЂРѕР±РѕРІР°С‚СЊ СЌС‚Сѓ РјР°СЃРєСѓ","stories_mask_sent":"РњР°СЃРєР° РѕС‚РїСЂР°РІР»РµРЅР° РЅР° С‚РµР»РµС„РѕРЅ","stories_followed":"Р’С‹ РїРѕРґРїРёСЃР°Р»РёСЃСЊ&#33;","stories_unfollowed":"Р’С‹ РѕС‚РїРёСЃР°Р»РёСЃСЊ","stories_is_ad":"Р РµРєР»Р°РјР°","stories_private_story":"РџСЂРёРІР°С‚РЅР°СЏ<br>РёСЃС‚РѕСЂРёСЏ","stories_expired_story":"Р�СЃС‚РѕСЂРёСЏ<br>РёСЃС‚РµРєР»Р°","stories_deleted_story":"Р�СЃС‚РѕСЂРёСЏ<br>СѓРґР°Р»РµРЅР°","stories_bad_browser":"Р�СЃС‚РѕСЂРёРё РЅРµ РїРѕРґРґРµСЂР¶РёРІР°СЋС‚СЃСЏ РІ Р’Р°С€РµРј Р±СЂР°СѓР·РµСЂРµ","stories_delete_all_replies_confirm":"Р’С‹ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ С…РѕС‚РёС‚Рµ СѓРґР°Р»РёС‚СЊ РІСЃРµ РѕС‚РІРµС‚С‹ {name} Р·Р° РїРѕСЃР»РµРґРЅРёРµ СЃСѓС‚РєРё? <br>РћС‚РјРµРЅРёС‚СЊ РґРµР№СЃС‚РІРёРµ Р±СѓРґРµС‚ РЅРµРІРѕР·РјРѕР¶РЅРѕ.","stories_hide_reply_button":"РЎРєСЂС‹С‚СЊ РѕС‚РІРµС‚","stories_reply_hidden":"РћС‚РІРµС‚ РЅР° РёСЃС‚РѕСЂРёСЋ СЃРєСЂС‹С‚.","stories_restore":"Р’РѕСЃСЃС‚Р°РЅРѕРІРёС‚СЊ","stories_hide_reply_continue":"РџСЂРѕРґРѕР»Р¶РёС‚СЊ РїСЂРѕСЃРјРѕС‚СЂ","stories_hide_all_replies":["","РЎРєСЂС‹С‚СЊ РІСЃРµ РµРіРѕ РѕС‚РІРµС‚С‹ Р·Р° РїРѕСЃР»РµРґРЅРёРµ СЃСѓС‚РєРё","РЎРєСЂС‹С‚СЊ РІСЃРµ РµС‘ РѕС‚РІРµС‚С‹ Р·Р° РїРѕСЃР»РµРґРЅРёРµ СЃСѓС‚РєРё"],"stories_reply_add_to_blacklist":"Р—Р°РЅРµСЃС‚Рё РІ С‡С‘СЂРЅС‹Р№ СЃРїРёСЃРѕРє","stories_hide_reply_warning":"Р’С‹ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ С…РѕС‚РёС‚Рµ СЃРєСЂС‹С‚СЊ СЌС‚РѕС‚ РѕС‚РІРµС‚?<br>РћС‚РјРµРЅРёС‚СЊ РґРµР№СЃС‚РІРёРµ Р±СѓРґРµС‚ РЅРµРІРѕР·РјРѕР¶РЅРѕ.","stories_replies_more_button":["","РџРѕРєР°Р·Р°С‚СЊ РµС‰С‘ %s РѕС‚РІРµС‚РёРІС€РµРіРѕ","РџРѕРєР°Р·Р°С‚СЊ РµС‰С‘ %s РѕС‚РІРµС‚РёРІС€РёС…","РџРѕРєР°Р·Р°С‚СЊ РµС‰С‘ %s РѕС‚РІРµС‚РёРІС€РёС…"],"stories_all_replies_hidden":"Р’СЃРµ РѕС‚РІРµС‚С‹ СЃРєСЂС‹С‚С‹","stories_ban_confirm":"Р’С‹ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ С…РѕС‚РёС‚Рµ РґРѕР±Р°РІРёС‚СЊ РІ С‡С‘СЂРЅС‹Р№ СЃРїРёСЃРѕРє {name}?<br>РћС‚РјРµРЅРёС‚СЊ РґРµР№СЃС‚РІРёРµ Р±СѓРґРµС‚ РЅРµРІРѕР·РјРѕР¶РЅРѕ.","stories_banned":"РџРѕР»СЊР·РѕРІР°С‚РµР»СЊ РІ С‡С‘СЂРЅРѕРј СЃРїРёСЃРєРµ","stories_share":"РџРѕРґРµР»РёС‚СЊСЃСЏ","stories_like":"РќСЂР°РІРёС‚СЃСЏ","stories_follow":"РџРѕРґРїРёСЃР°С‚СЊСЃСЏ","stories_unfollow":"РћС‚РїРёСЃР°С‚СЊСЃСЏ","stories_report":"РџРѕР¶Р°Р»РѕРІР°С‚СЊСЃСЏ","stories_report_sent":"Р–Р°Р»РѕР±Р° РѕС‚РїСЂР°РІР»РµРЅР°","stories_narrative_show":"РџРѕСЃРјРѕС‚СЂРµС‚СЊ cСЋР¶РµС‚","stories_narrative_bookmark_added":"РЎСЋР¶РµС‚ СЃРѕС…СЂР°РЅС‘РЅ РІ {link}Р·Р°РєР»Р°РґРєР°С…{\/link}","stories_narrative_bookmark_deleted":"РЎСЋР¶РµС‚ СѓРґР°Р»С‘РЅ РёР· Р·Р°РєР»Р°РґРѕРє","stories_narrative_edit_button":"Р РµРґР°РєС‚РёСЂРѕРІР°С‚СЊ СЃСЋР¶РµС‚","stories_narrative_add_bookmark_button":"РЎРѕС…СЂР°РЅРёС‚СЊ РІ Р·Р°РєР»Р°РґРєР°С…","stories_narrative_remove_bookmark_button":"РЈРґР°Р»РёС‚СЊ РёР· Р·Р°РєР»Р°РґРѕРє","stories_show_hashtag_link":"РџРѕРёСЃРє РїРѕ С…РµС€С‚РµРіСѓ","stories_go_to_place":"РџРµСЂРµР№С‚Рё Рє РјРµСЃС‚Сѓ","stories_go_to_group":"РћС‚РєСЂС‹С‚СЊ СЃРѕРѕР±С‰РµСЃС‚РІРѕ","stories_go_to_profile":"РћС‚РєСЂС‹С‚СЊ РїСЂРѕС„РёР»СЊ","stories_go_to_post":"РџРµСЂРµР№С‚Рё Рє Р·Р°РїРёСЃРё","stories_go_to_story":"РџРµСЂРµР№С‚Рё Рє РёСЃС‚РѕСЂРёРё","stories_share_question":"РџРѕРґРµР»РёС‚СЊСЃСЏ РјРЅРµРЅРёРµРј","stories_live_ended_title":"РЎРїР°СЃРёР±Рѕ Р·Р° РїСЂРѕСЃРјРѕС‚СЂ&#33;","stories_live_ended_desc_club":"РЎРѕРѕР±С‰РµСЃС‚РІРѕ {name} <br>Р·Р°РІРµСЂС€РёР»Рѕ С‚СЂР°РЅСЃР»СЏС†РёСЋ.","stories_live_ended_desc_user":["","{name} Р·Р°РІРµСЂС€РёР» С‚СЂР°РЅСЃР»СЏС†РёСЋ.","{name} Р·Р°РІРµСЂС€РёР»Р° С‚СЂР°РЅСЃР»СЏС†РёСЋ."],"stories_live_ended_open_club":"РћС‚РєСЂС‹С‚СЊ СЃРѕРѕР±С‰РµСЃС‚РІРѕ","stories_live_ended_open_user":"РћС‚РєСЂС‹С‚СЊ РїСЂРѕС„РёР»СЊ","stories_live_ended_watch_next":"РЎРјРѕС‚СЂРµС‚СЊ РґР°Р»РµРµ","stories_live_N_watching":["","%s СЃРјРѕС‚СЂРёС‚ СЃРµР№С‡Р°СЃ","%s СЃРјРѕС‚СЂСЏС‚ СЃРµР№С‡Р°СЃ","%s СЃРјРѕС‚СЂСЏС‚ СЃРµР№С‡Р°СЃ"],"stories_live_chat_msg_too_long":"РЎРѕРѕР±С‰РµРЅРёРµ СЃР»РёС€РєРѕРј РґР»РёРЅРЅРѕРµ ","stories_questions_title":"РњРЅРµРЅРёСЏ","stories_question_reply":"РћС‚РІРµС‚РёС‚СЊ","stories_question_reply_error":"Р’С‹ РЅРµ РјРѕР¶РµС‚Рµ РѕС‚РїСЂР°РІРёС‚СЊ СЃРѕРѕР±С‰РµРЅРёРµ СЌС‚РѕРјСѓ РїРѕР»СЊР·РѕРІР°С‚РµР»СЋ, С‚Р°Рє РєР°Рє РѕРЅ РѕРіСЂР°РЅРёС‡РёР» РєСЂСѓРі Р»РёС†, РєРѕС‚РѕСЂС‹Рµ РјРѕРіСѓС‚ РїСЂРёСЃС‹Р»Р°С‚СЊ РµРјСѓ СЃРѕРѕР±С‰РµРЅРёСЏ.","stories_question_reply_send":"РћС‚РїСЂР°РІРёС‚СЊ","stories_question_reply_placeholder":"РќР°РїРёС€РёС‚Рµ СЃРѕРѕР±С‰РµРЅРёРµ...","stories_question_delete":"РЈРґР°Р»РёС‚СЊ РјРЅРµРЅРёРµ","stories_question_author_ban":"Р—Р°Р±Р»РѕРєРёСЂРѕРІР°С‚СЊ","stories_question_author_unban":"Р Р°Р·Р±Р»РѕРєРёСЂРѕРІР°С‚СЊ Р°РІС‚РѕСЂР°","stories_question_author_blocked":"РђРІС‚РѕСЂ Р·Р°Р±Р»РѕРєРёСЂРѕРІР°РЅ","stories_question_author_unblocked":"РђРІС‚РѕСЂ СЂР°Р·Р±Р»РѕРєРёСЂРѕРІР°РЅ","stories_question_author_report":"РџРѕР¶Р°Р»РѕРІР°С‚СЊСЃСЏ","stories_question_report_title":"Р–Р°Р»РѕР±Р° РЅР° РјРЅРµРЅРёРµ","stories_question_report_send":"РћС‚РїСЂР°РІРёС‚СЊ","stories_question_more":"Р”РµР№СЃС‚РІРёСЏ","stories_question_sent":"Р’С‹ РїРѕРґРµР»РёР»РёСЃСЊ РјРЅРµРЅРёРµРј СЃ {name}","stories_question_reply_box_title":"РЎРѕРѕР±С‰РµРЅРёРµ {name}","stories_question_ask_placeholder":"Р’РІРµРґРёС‚Рµ С‚РµРєСЃС‚...","stories_question_ask_box_title":"РњРЅРµРЅРёРµ Рє РёСЃС‚РѕСЂРёРё {name}","stories_question_report_reason":"РЈРєР°Р¶РёС‚Рµ РїСЂРёС‡РёРЅСѓ","stories_question_forbidden":"Р’С‹ РЅРµ РјРѕР¶РµС‚Рµ РїРѕРґРµР»РёС‚СЊСЃСЏ РјРЅРµРЅРёРµРј","stories_audio_add":"Р”РѕР±Р°РІРёС‚СЊ РІ РјРѕСЋ РјСѓР·С‹РєСѓ","stories_audio_added":"РђСѓРґРёРѕР·Р°РїРёСЃСЊ РґРѕР±Р°РІР»РµРЅР°","stories_audio_delete":"РЈРґР°Р»РёС‚СЊ Р°СѓРґРёРѕР·Р°РїРёСЃСЊ","stories_audio_deleted":"РђСѓРґРёРѕР·Р°РїРёСЃСЊ СѓРґР°Р»РµРЅР°","stories_audio_next_audio":"РЎР»СѓС€Р°С‚СЊ РґР°Р»РµРµ","stories_reactions_title":"Р‘С‹СЃС‚СЂС‹Рµ СЂРµР°РєС†РёРё","stories_reactions_tooltip_feature":"РќР°Р¶РјРёС‚Рµ РЅР° РїРѕР»Рµ РІРІРѕРґР°, С‡С‚РѕР±С‹ РѕС‚РїСЂР°РІРёС‚СЊ СЂРµР°РєС†РёСЋ","stories_go_to_market_item":"РџРѕРґСЂРѕР±РЅРµРµ","stories_market_access_error_title":"РћС€РёР±РєР°","stories_market_access_error_text":"Р”Р°РЅРЅС‹Р№ С‚РѕРІР°СЂ РЅРµРґРѕСЃС‚СѓРїРµРЅ","stories_groups_feed_block":"РЎРѕРѕР±С‰РµСЃС‚РІР°","stories_settings_box_tab_all":"Р’СЃРµ","stories_settings_box_tab_separately":"РћС‚РѕР±СЂР°Р¶Р°РµРјС‹Рµ РѕС‚РґРµР»СЊРЅРѕ","stories_settings_box_tab_grouped":"РЎРіСЂСѓРїРїРёСЂРѕРІР°РЅРЅС‹Рµ","stories_settings_box_search_placeholder":"РџРѕРёСЃРє РїРѕ СЃРѕРѕР±С‰РµСЃС‚РІР°Рј","stories_settings_box_put_back":"РћС‚РѕР±СЂР°Р¶Р°С‚СЊ РїРѕСЃР»РµРґРЅРёРј","stories_groups_grid_title":"Р�СЃС‚РѕСЂРёРё СЃРѕРѕР±С‰РµСЃС‚РІ","stories_go_to_app":"РџРµСЂРµР№С‚Рё Рє РїСЂРёР»РѕР¶РµРЅРёСЋ","stories_groups_grid_text":"Р—РґРµСЃСЊ СЃРѕР±СЂР°РЅС‹ РёСЃС‚РѕСЂРёРё СЃРѕРѕР±С‰РµСЃС‚РІ, РЅР° РєРѕС‚РѕСЂС‹Рµ Р’С‹ РїРѕРґРїРёСЃР°РЅС‹","stories_groups_tooltip":"РћС‚РјРµС‡Р°Р№С‚Рµ РёСЃС‚РѕСЂРёРё, РєРѕС‚РѕСЂС‹Рµ С…РѕС‚РёС‚Рµ РІРёРґРµС‚СЊ РІ РѕР±С‰РµРј СЃРїРёСЃРєРµ","stories_settings_saved":"РќР°СЃС‚СЂРѕР№РєРё СЃРѕС…СЂР°РЅРµРЅС‹","stories_question_select_public":"РџСѓР±Р»РёС‡РЅРѕ","stories_question_select_author_only":"Р’РёРґРЅРѕ С‚РѕР»СЊРєРѕ Р°РІС‚РѕСЂСѓ","stories_question_select_anonymous":"РђРЅРѕРЅРёРјРЅРѕ","stories_question_about_user_tooltip":"<b>РџСѓР±Р»РёС‡РЅРѕ<\/b><br>{name} СЃРјРѕР¶РµС‚ СѓРєР°Р·Р°С‚СЊ Р’Р°С€Рµ РёРјСЏ РїСЂРё РїСѓР±Р»РёРєР°С†РёРё РјРЅРµРЅРёСЏ.<br><br><b>Р�РјСЏ РІРёРґРЅРѕ Р°РІС‚РѕСЂСѓ<\/b><br>{name} СѓРІРёРґРёС‚ Р’Р°С€Рµ РёРјСЏ, РЅРѕ РЅРµ СЃРјРѕР¶РµС‚ СѓРєР°Р·Р°С‚СЊ РµРіРѕ РїСЂРё РїСѓР±Р»РёРєР°С†РёРё РјРЅРµРЅРёСЏ.<br><br><b>РђРЅРѕРЅРёРјРЅРѕ<\/b><br>{name} РЅРµ СѓРІРёРґРёС‚ Р’Р°С€Рµ РёРјСЏ Рё РЅРµ СЃРјРѕР¶РµС‚ СѓРєР°Р·Р°С‚СЊ РµРіРѕ РїСЂРё РїСѓР±Р»РёРєР°С†РёРё РјРЅРµРЅРёСЏ.","stories_question_about_group_tooltip":"<b>РџСѓР±Р»РёС‡РЅРѕ<\/b><br>Р СѓРєРѕРІРѕРґРёС‚РµР»СЊ СЃРѕРѕР±С‰РµСЃС‚РІР° СЃРјРѕР¶РµС‚ СѓРєР°Р·Р°С‚СЊ Р’Р°С€Рµ РёРјСЏ РїСЂРё РїСѓР±Р»РёРєР°С†РёРё РјРЅРµРЅРёСЏ.<br><br><b>Р�РјСЏ РІРёРґРЅРѕ Р°РІС‚РѕСЂСѓ<\/b><br>Р СѓРєРѕРІРѕРґРёС‚РµР»СЊ СЃРѕРѕР±С‰РµСЃС‚РІР° СѓРІРёРґРёС‚ Р’Р°С€Рµ РёРјСЏ, РЅРѕ РЅРµ СЃРјРѕР¶РµС‚ СѓРєР°Р·Р°С‚СЊ РµРіРѕ РїСЂРё РїСѓР±Р»РёРєР°С†РёРё РјРЅРµРЅРёСЏ.<br><br><b>РђРЅРѕРЅРёРјРЅРѕ<\/b><br>Р СѓРєРѕРІРѕРґРёС‚РµР»СЊ СЃРѕРѕР±С‰РµСЃС‚РІР° РЅРµ СѓРІРёРґРёС‚ Р’Р°С€Рµ РёРјСЏ Рё РЅРµ СЃРјРѕР¶РµС‚ СѓРєР°Р·Р°С‚СЊ РµРіРѕ РїСЂРё РїСѓР±Р»РёРєР°С†РёРё РјРЅРµРЅРёСЏ.","stories_question_about_user_tooltip_without_anon":"<b>РџСѓР±Р»РёС‡РЅРѕ<\/b><br>{name} СЃРјРѕР¶РµС‚ СѓРєР°Р·Р°С‚СЊ Р’Р°С€Рµ РёРјСЏ РїСЂРё РїСѓР±Р»РёРєР°С†РёРё РјРЅРµРЅРёСЏ.<br><br><b>Р�РјСЏ РІРёРґРЅРѕ Р°РІС‚РѕСЂСѓ<\/b><br>{name} СѓРІРёРґРёС‚ Р’Р°С€Рµ РёРјСЏ, РЅРѕ РЅРµ СЃРјРѕР¶РµС‚ СѓРєР°Р·Р°С‚СЊ РµРіРѕ РїСЂРё РїСѓР±Р»РёРєР°С†РёРё РјРЅРµРЅРёСЏ.","stories_question_about_group_tooltip_without_anon":"<b>РџСѓР±Р»РёС‡РЅРѕ<\/b><br>Р СѓРєРѕРІРѕРґРёС‚РµР»СЊ СЃРѕРѕР±С‰РµСЃС‚РІР° СЃРјРѕР¶РµС‚ СѓРєР°Р·Р°С‚СЊ Р’Р°С€Рµ РёРјСЏ РїСЂРё РїСѓР±Р»РёРєР°С†РёРё РјРЅРµРЅРёСЏ.<br><br><b>Р�РјСЏ РІРёРґРЅРѕ Р°РІС‚РѕСЂСѓ<\/b><br>Р СѓРєРѕРІРѕРґРёС‚РµР»СЊ СЃРѕРѕР±С‰РµСЃС‚РІР° СѓРІРёРґРёС‚ Р’Р°С€Рµ РёРјСЏ, РЅРѕ РЅРµ СЃРјРѕР¶РµС‚ СѓРєР°Р·Р°С‚СЊ РµРіРѕ РїСЂРё РїСѓР±Р»РёРєР°С†РёРё РјРЅРµРЅРёСЏ."}, true);
+addLangKeys({"join_resend_code":"Р’С‹СЃР»Р°С‚СЊ РєРѕРґ РїРѕРІС‚РѕСЂРЅРѕ","join_resend_code_time":"Р’С‹СЃР»Р°С‚СЊ РєРѕРґ РїРѕРІС‚РѕСЂРЅРѕ С‡РµСЂРµР· %s","join_send_code_via_sms":"РћС‚РїСЂР°РІРёС‚СЊ РєРѕРґ С‡РµСЂРµР· SMS","join_send_code_via_sms_time":"РћС‚РїСЂР°РІРёС‚СЊ РєРѕРґ РІ SMS С‡РµСЂРµР· %s","notifications_native_common_error":"РџСЂРѕРёР·РѕС€Р»Р° РѕС€РёР±РєР° РїСЂРё РІРєР»СЋС‡РµРЅРёРё СѓРІРµРґРѕРјР»РµРЅРёР№."});
+addTemplates({"_":"_","stickers_sticker_url":"https:\/\/vk.com\/sticker\/1-%id%-%size%"});
+window.cur = window.cur || {};
+cur['emojiHintsSendLogHash']="b88e373dd4e191f0ca";
+Login.init();
+if (ge('login_fast_restore_btn')) {
+  domPN(ge('login_fast_restore_btn')).appendChild(ce('div', {innerHTML: '<iframe name="fast_restore_test_frame"></iframe><form id="fast_restore_test_form" method="POST" action="https://login.vk.com/?act=create_test&_origin=https://vk.com&' + Math.random() + '" target="fast_restore_test_frame"></form>'}, {position: 'absolute', visibility: 'hidden'}));
+  ge('fast_restore_test_form').submit();
+}
+;(function (d, w) {
+if (w.__dev) {
+  return
+}
+var ts = d.createElement("script"); ts.type = "text/javascript"; ts.async = true;
+ts.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//top-fwz1.mail.ru/js/code.js";
+var f = function () {var s = d.getElementsByTagName("script")[0]; s.parentNode.insertBefore(ts, s);};
+if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); }
+})(document, window);
+      window.curReady && window.curReady();
+    }
+  </script>
+
+
+<div class="advblock advertblock ammblock b-banner b-media-banner pub_300x250 pub_300x250m medium_rectangle_300_250 pub_728x90 leaderboard_728_90 wide_skyscraper_160_600 wide_skyscraper_160x600 text-ad textAd text_ad text_ads text-ads text-ad-links ad_text ad_text banner_text text-banner b-rb rb-slot b-promo-ad i-branding branding-p rb-video-widget b-mimic-adv pm-toolbar__banner rb_body sticky-springs adv_slot_1 banner_240 block_share action--share sharelist js-banner direct pc-mimic tgb-banner yadirect js-promo-popup m-subscription p-target p-directhack rb-floating trg-b-banner-block" style="position: absolute !important; top: -9999px !important; left: -9999px !important; width: 1px !important; height: 1px !important;" id="trg-b-banners-1" data-view="SlotView.mimic"></div></body></html>
