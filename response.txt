@@ -1,0 +1,18 @@
+<script type="text/javascript">
+var _ua = navigator.userAgent;
+var locDomain = 'vk.com'.match(/[a-zA-Z]+\.[a-zA-Z]+\.?$/)[0];
+if (/opera/i.test(_ua) || !/msie 6/i.test(_ua) || document.domain != locDomain) {
+  document.domain = locDomain;
+}
+parent.__qlClear();
+addEvent = parent.addEvent;
+vk = parent.vk;
+parent.stManager.add(['notifier.js', 'notifier.css'], function() {
+  Notifier = parent.Notifier;
+    ;(function () {
+    var cb = function () {Notifier.init({"queue_id":"events_queue62717275","timestamp":662143684,"key":"Isa0PM3JQ5Zjmq1NRvwbhnJxGY0TcEzoTGdfsy2vY6ouddNh_YMXXkoDb_A0GU6C","uid":"62717275","version":10,"debug":false,"instance_id":"MjQ0NDM5","server_url":"https:\/\/queuev4.vk.com\/im275","frame_path":"https:\/\/queuev4.vk.com\/q_frame.php?7","frame_url":"im275","refresh_url":"https:\/\/vk.com\/notifier.php","mutedPeers":[-11921054,62117503,578796376,2000000029,2000000037,2000000039,2000000040,2000000043,2000000044,2000000066,2000000068,2000000074,2000000075,2000000077,2000000079,2000000080,2000000084,2000000087,2000000096,2000000097,2000000100,2000000103,2000000104,2000000105,2000000106,2000000107,2000000108],"fc":{"version":23,"state":{"clist":{"min":true,"x":0.820284,"y":-1.000000},"tabs":[],"version":23},"state_hash":"1584663389_ab17f4ef036255d123"}})}
+    if (window.vk && window.vk.loaded) cb(); else addEvent(window, 'DOMContentLoaded load', cb);
+  })();
+  parent.onLoginDone('/id62717275', {name: 'Константин Литвин', photo_50: 'https://sun1-83.userapi.com/-eWFXCqTb_R3fYuR3miJVNGOO7Li3e539_9mSQ/ccysApPq9vI.jpg?ava=1'});
+});
+</script>
