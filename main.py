@@ -10,6 +10,42 @@ import io
 from random import choice
 from multiprocessing import Pool
 
+
+def get_html_selenium3(url,user_agent,proxy):
+    options=webdriver.ChromeOptions()
+    options.add_argument('--proxy-server-%s'%proxy)
+    options.add_experimental_option('w3c', False)
+    #options.add_argument("--headless")
+    script = """
+    document.getElementById('index_email').value = 'monstr541@yandex.ru'
+    document.getElementById('index_pass').value = 'bzr7quj991331AA'
+    document.getElementById('index_login_button').click()"""
+    driver=webdriver.Chrome('chromedriver.exe', options=options)
+    driver.get(url)
+    driver.execute_script(script)
+    cookies =driver.get_cookies()
+    driver.quit()
+    return cookies
+
+def get_html_selenium2(url,user_agent,proxy,cookies):
+    options=webdriver.ChromeOptions()
+    options.add_argument('--proxy-server-%s'%proxy)
+    options.add_experimental_option('w3c', False)
+    #options.add_argument("--headless")
+    driver=webdriver.Chrome('chromedriver.exe', options=options)
+    driver.get(url)
+
+    for cookie in cookies:
+        for cookie in cookies:
+            if 'expiry' in cookie:
+                cookie['expiry'] = int(cookie['expiry'])
+        driver.add_cookie(cookie)
+
+    print(driver.get_cookies())
+    time.sleep(6)
+    driver.quit()
+
+
 def get_html_selenium(url,user_agent,proxy):
         options=webdriver.ChromeOptions()
         options.add_argument('--proxy-server-%s'%proxy)
