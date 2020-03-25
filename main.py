@@ -16,7 +16,7 @@ async def get_cookies_peteer(url,user_agent,proxy,script_for_auth):
     page = await browser.newPage()
     await page.goto(url)
     await page.evaluate(script_for_auth)
-    await navPromise
+    time.sleep(6)
     cookies=await page.cookies()
     await browser.close()
     return cookies
