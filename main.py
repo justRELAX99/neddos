@@ -151,10 +151,8 @@ def main(url,numbers_proxy,script_for_auth,script_for_selenium):
         for proxy in proxies:
             scrape(proxy, loop=loop)
 
-        answer=loop.run_until_complete(asyncio.gather(*asyncio.all_tasks(loop)))
+        loop.run_until_complete(asyncio.gather(*asyncio.all_tasks(loop)))
 
-
-    pprint.pprint(answer)
     end=datetime.now()
     total=end-start
     print(total)
